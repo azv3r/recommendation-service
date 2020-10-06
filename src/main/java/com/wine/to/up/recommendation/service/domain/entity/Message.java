@@ -9,6 +9,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.UUID;
 
+/*
+    * @autor
+    * @atribute id - UUID unique id
+    * @atribute content - conetnt of a certain Message
+    *
+    *
+ */
 @Entity
 @Table(name = "messages")
 @Setter
@@ -19,6 +26,10 @@ public class Message {
     private UUID id = UUID.randomUUID();
     private String content;
 
+    /*
+        Constructor - creating new object w/ certain params
+     * @param content - content
+     */
     public Message(String content) {
         this.content = content;
     }
