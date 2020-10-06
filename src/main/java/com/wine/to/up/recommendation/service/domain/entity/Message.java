@@ -9,25 +9,26 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.UUID;
 
-/**
-    * id - UUID unique id
-    * content - conetnt of a certain Message
-    *
-    *
- */
 @Entity
 @Table(name = "messages")
 @Setter
 @Getter
 @NoArgsConstructor
 public class Message {
+    /**
+     * id is unique identifier for a certain Message
+     */
     @Id
     private UUID id = UUID.randomUUID();
+
+    /**
+     * content is a string that keeps inforamtion about the content of a certain Message
+     */
     private String content;
 
-    /*
-        Constructor - creating new object w/ certain params
-     * @param content - content
+    /**
+     * simple constructor
+     * @param content is a string
      */
     public Message(String content) {
         this.content = content;

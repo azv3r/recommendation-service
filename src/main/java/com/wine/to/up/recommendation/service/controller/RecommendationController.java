@@ -23,6 +23,11 @@ public class RecommendationController {
     }
 
 
+    /**
+     * Method that returns RecommendationResponse by using Request id
+     * @param userId is an identifier
+     * @return RecommendationResponse
+     */
     @GetMapping(path = "/recommendation/{userId:[\\d]+}")
     public RecommendationResponse getByRequest(@PathVariable final long userId) {
         final RequestDTO recommendation = recommendationService.findById(userId);

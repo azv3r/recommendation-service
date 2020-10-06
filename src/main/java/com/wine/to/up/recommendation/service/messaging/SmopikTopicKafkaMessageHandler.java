@@ -12,10 +12,8 @@ public class SmopikTopicKafkaMessageHandler implements KafkaMessageHandler<Strin
     private final AtomicInteger counter = new AtomicInteger(0);
 
     /**
-     * @param message
-     * Example method recieveing message which keeps information in log files
-     * information such as: number of messages and content
-     *
+     * Message handler that shows information about count of messages and their content via log
+     * @param message is a string description of message content
      */
     @Override
     public void handle(String message) {

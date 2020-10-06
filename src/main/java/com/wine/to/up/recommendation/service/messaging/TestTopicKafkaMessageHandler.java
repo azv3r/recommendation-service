@@ -17,19 +17,14 @@ public class TestTopicKafkaMessageHandler implements KafkaMessageHandler<KafkaMe
 
     private final AtomicInteger counter = new AtomicInteger(0);
 
-    /**
-     *
-     * @param messageRepository
-     * Constructor
-     */
     @Autowired
     public TestTopicKafkaMessageHandler(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
     }
 
     /**
-     * @param message
-     * Another message handler
+     * Message handler that keeps information about count of messages and their content
+     * @param message is a KafkaMessageSentEvent object
      */
     @Override
     public void handle(KafkaMessageSentEvent message) {
