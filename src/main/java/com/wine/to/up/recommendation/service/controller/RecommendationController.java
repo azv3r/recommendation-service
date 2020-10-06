@@ -25,7 +25,7 @@ public class RecommendationController {
 
     /**
      * Method that returns RecommendationResponse by using Request id
-     * @param userId is an identifier
+     * @param userId is  unique identifier
      * @return RecommendationResponse
      */
     @GetMapping(path = "/recommendation/{userId:[\\d]+}")
