@@ -9,14 +9,24 @@ public enum RecommendationServiceNotableEvents implements NotableEvent {
 
     private final String template;
 
+    /**
+     *
+     * @param template w/ 2 states
+     */
     RecommendationServiceNotableEvents(String template) {
         this.template = template;
     }
 
+    /**
+     * @return returns template
+     */
     public String getTemplate() {
         return template;
     }
 
+    /**
+     * @return returns name
+     */
     @Override
     public String getName() {
         return name();

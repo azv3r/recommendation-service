@@ -4,10 +4,9 @@ import lombok.Builder;
 import lombok.Data;
 
 
-/*
-    *@autor Kamran
+/**
     *@version 1.0
-    *@atribute id - id of a request
+    *id - id of a request
     *
     *
  */

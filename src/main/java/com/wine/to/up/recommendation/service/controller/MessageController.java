@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * REST controller of the service
+ *
  */
 @RestController
 @RequiredArgsConstructor
@@ -21,9 +22,10 @@ import java.util.List;
 public class MessageController {
     public final MessageRepository messageRepository;
 
-    /*
-        * Method that returns list of all sent messages
+    /**
+        *
         * @return returns list of sent messages
+        * Method that returns list of all sent messages
         *
      */
     @GetMapping

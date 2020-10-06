@@ -7,11 +7,13 @@ import org.apache.kafka.common.serialization.Deserializer;
 
 /**
  * Deserializer for {@link KafkaMessageSentEvent}
+ * @version 1.0
  */
 @Slf4j
 public class EventDeserializer implements Deserializer<KafkaMessageSentEvent> {
     /**
      * {@inheritDoc}
+     * @version 1.0
      */
     @Override
     public KafkaMessageSentEvent deserialize(String topic, byte[] bytes) {

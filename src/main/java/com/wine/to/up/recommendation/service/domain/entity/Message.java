@@ -9,10 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.UUID;
 
-/*
-    * @autor
-    * @atribute id - UUID unique id
-    * @atribute content - conetnt of a certain Message
+/**
+    * id - UUID unique id
+    * content - conetnt of a certain Message
     *
     *
  */

@@ -5,6 +5,7 @@ import org.apache.kafka.common.serialization.Serializer;
 
 /**
  * Serializer for {@link KafkaMessageSentEvent}
+ * @version 1.0
  */
 public class EventSerializer implements Serializer<KafkaMessageSentEvent> {
     /**

@@ -11,6 +11,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SmopikTopicKafkaMessageHandler implements KafkaMessageHandler<String> {
     private final AtomicInteger counter = new AtomicInteger(0);
 
+    /**
+     * @param message
+     * Example method recieveing message which keeps information in log files
+     * information such as: number of messages and content
+     *
+     */
     @Override
     public void handle(String message) {
         counter.incrementAndGet();
