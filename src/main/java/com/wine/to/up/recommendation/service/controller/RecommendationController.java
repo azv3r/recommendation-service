@@ -10,13 +10,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+/**
+ * Controller
+ * @version 0.3.1
+ */
 @RestController
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 public class RecommendationController {
 
     private final RecommendationService recommendationService;
 
+    /**
+     * Constructor
+     * @param recommendationService is an attribute that keeps list of ids
+     */
     @Autowired
     public RecommendationController(final RecommendationService recommendationService) {
         this.recommendationService = recommendationService;
